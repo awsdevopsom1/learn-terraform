@@ -5,6 +5,6 @@ resource "aws_instance" "sample" {
    ami = "ami-0b4f379183e5706b9"
    instance_type = "t3.small"
    tags = {
-     name = "Helloworlds"
+     Name = "Helloworlds"
    }
 }
