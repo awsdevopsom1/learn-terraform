@@ -30,7 +30,7 @@ output "quantity" {
   value = var.map["apple"]
 }
 
-output "quantity" {
+output "quantity_apple" {
     value = "fruit apple is having only ${var.map["apple"]} quantity"
   
 }
