@@ -8,17 +8,17 @@
 variable "instance1" {
     default = {
         frontend = {
-            name = frontend
-            instance_type = t3.micro
+            name = "frontend"
+            instance_type = "t3.micro"
         }
 
         backend = {
-            name = backendend
-            instance_type = t3.micro
+            name = "backendend"
+            instance_type = "t3.micro"
         }
         mysql = {
-            name = mysql
-            instance_type = t3.micro
+            name = "mysql"
+            instance_type = "t3.micro"
         }    
     }
   
