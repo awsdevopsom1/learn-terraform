@@ -32,4 +32,13 @@ output "fruits1" {
 output "fruits_colour" {
     value = "Here is the colour of the ${var.fruits_first["banana"]} quantity"
   
-}
+  }
+
+variable "test1" {}
+output "test1" {
+    value = var.test1
+    }
+variable "env" {}
+output "env" {
+    value = var.env
+  }
