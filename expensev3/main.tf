@@ -12,6 +12,7 @@ resource "aws_instance" "instances"{
   }"
 
 }
+}
   
 resource "aws_route53_record" "frontend" {
   for_each = var.components
