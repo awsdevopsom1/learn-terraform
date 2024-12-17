@@ -1,44 +1,35 @@
-variable "sample" {
-   default = "hello"
-}
-
-output "sample" {
-    value = var.sample  
+variable "sampe1" {
+    default = "hello"
   
 }
 
-
-variable "sample2" {
-   default = ["apple", "banana", "orange"]
-}
-
-output "sample2" {
-    value = var.sample2[1] 
+output "sample12" {
+    value = var.sampe1
   
 }
 
-variable "map" {
-    default = {
-        apple = 100
-        banana = 200
-        orange = 10
-    }
-  
+variable "fruits" {
+  default = ["apple", "banana", "orange"]
 }
 
-output "quantity" {
-  value = var.map["apple"]
+output "fruits" {
+   value = var.fruits[0]    
 }
 
-output "quantity_apple" {
-    value = "fruit apple is having only ${var.map["apple"]} quantity"
-  
-}
-
-
-variable "test1" {}
-output "test1" {
-    value = var.test1
+variable "fruits_first" {
+  default = {
+    apple = "red"
+    banana = "orange"
+    grapes = "black"
   }
+}
 
-variable "env" {}
+output "fruits1" {
+    value = var.fruits_first["apple"]
+  
+}
+
+output "fruits_colour" {
+    value = "Here is the colour of the ${var.fruits_colour["banana"]} quantity"
+  
+}
