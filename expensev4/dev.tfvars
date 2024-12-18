@@ -1,7 +1,7 @@
 env = "dev"
 ami = "ami-0b4f379183e5706b9"
-sg_id = ["jasdjfajdf"]
-zone_id = "aws_route53_zone.primary.zone_id"
+sg_id = ["sg-053f31aa61223c45f"]
+zone_id = "Z0705553LI8IW1JSJIQR"
 components = {
     frontend = {
         name = "frontend"
