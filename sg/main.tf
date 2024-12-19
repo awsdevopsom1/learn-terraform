@@ -12,7 +12,7 @@ resource "aws_instance" "challenge1" {
 
 resource "aws_security_group" "SG" {
     name = "ALLOWHTTPS"
-    ingress = {
+    ingress  {
           from_port = 443
           to_port = 443
           protocol = "TCP"
@@ -20,7 +20,7 @@ resource "aws_security_group" "SG" {
 
     }
 
-    egress = {
+    egress  {
           from_port = 443
           to_port = 443
           protocol = "TCP"
@@ -29,7 +29,3 @@ resource "aws_security_group" "SG" {
     }
 }
 
-output "eip" {
-   value = aws_eip.eip.public_ip  
-  
-}
