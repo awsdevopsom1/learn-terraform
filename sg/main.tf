@@ -16,7 +16,7 @@ resource "aws_security_group" "SG" {
           from_port = 443
           to_port = 443
           protocol = "TCP"
-          cidr_block = ["0.0.0.0/0"]
+          cidr_blocks = ["0.0.0.0/0"]
 
     }
 
@@ -24,7 +24,7 @@ resource "aws_security_group" "SG" {
           from_port = 443
           to_port = 443
           protocol = "TCP"
-          cidr_block = ["0.0.0.0/0"]
+          cidr_blocks = ["0.0.0.0/0"]
 
     }
 }
